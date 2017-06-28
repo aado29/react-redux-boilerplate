@@ -2,7 +2,10 @@ const path = require("path");
 
 module.exports = {
 	entry: {
-		app: path.resolve(__dirname, "src", "index.jsx")
+		app: [
+			'react-hot-loader/patch',
+			path.resolve(__dirname, "src", "index.jsx")
+		]
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
