@@ -1,16 +1,28 @@
 {
   "name": "react-redux-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boilerplate with react redux and webpack",
   "main": "index.js",
   "scripts": {
     "build": "webpack --colors",
     "serve": "webpack-dev-server --colors NODE_ENV='production'",
     "serve:dev": "webpack-dev-server --hot --colors NODE_ENV='development'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "react",
+    "router",
+    "react-router",
+    "webpack",
+    "redux",
+    "react-redux",
+    "boilerplate",
+    "react-redux-boilerplate",
+    "react-router-redux",
+    "ES2015"
+  ],
+  "author": "Alberto Diaz <aado29@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/aado29/react-redux-boilerplate",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.1.0",
