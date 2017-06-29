@@ -14,13 +14,15 @@ If you are not using `yarn`, you can just type:
 
 ### Run
 
-You can run the project in *poduction* and *development* mode, if you want to run in poduction mode just type:
+<!-- You can run the project in *poduction* and *development* mode, if you want to run in poduction mode just type: -->
+
+To run the project just type:
 
 `$ yarn serve`
 
-otherwise:
+<!-- otherwise:
 
-`$ yarn serve:dev`
+`$ yarn serve:dev` -->
 
 ### Deploy
 

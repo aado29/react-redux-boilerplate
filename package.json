@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --colors",
-    "serve": "webpack-dev-server --colors NODE_ENV='production'",
-    "serve:dev": "webpack-dev-server --hot --colors NODE_ENV='development'"
+    "serve": "webpack-dev-server --hot --colors"
   },
   "keywords": [
     "react",
