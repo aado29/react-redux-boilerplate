@@ -11,9 +11,9 @@ export default (initialState = {}) => {
 	const store = createStore(
 		rootReducer,
 		initialState,
-		compose(
-			applyMiddleware(router),
-			applyMiddleware(thunk)
+		applyMiddleware(
+			router,
+			thunk
 		)
 	)
 

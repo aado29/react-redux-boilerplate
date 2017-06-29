@@ -3,14 +3,14 @@ import { Router, Route, IndexRoute } from 'react-router'
 import { ConnectedRouter } from 'react-router-redux'
 import createHistory from 'history/createBrowserHistory'
 import App from './Components/App'
+import Reddit from './Containers/Reddit'
 
 const history = createHistory()
 const Routes = () => (
 	<ConnectedRouter history={history}>
-    	<Route path='/' component={App}>
-    		{/* <IndexRoute component={mainComponent} /> */}
-			{/* <Route path='/otherRoute' component={otherComponent} /> */}
-    	</Route>
+    	<App>
+			<Route path='/' component={Reddit} />
+    	</App>
     </ConnectedRouter>
 );
 

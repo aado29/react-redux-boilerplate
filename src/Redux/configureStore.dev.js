@@ -3,17 +3,20 @@ import rootReducer from '.'
 import thunk from 'redux-thunk'
 import createHistory from 'history/createBrowserHistory'
 import { routerMiddleware } from 'react-router-redux'
+import { createLogger } from 'redux-logger'
 
 const history = createHistory()
 const router = routerMiddleware(history)
+const loggerMiddleware = createLogger()
 
 export default (initialState = {}) => {
 	const store = createStore(
 		rootReducer,
 		initialState,
-		compose(
-			applyMiddleware(router),
-			applyMiddleware(thunk)
+		applyMiddleware(
+			router,
+			thunk,
+			loggerMiddleware
 		)
 	)
 
